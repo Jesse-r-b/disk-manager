@@ -52,6 +52,10 @@ if(HAVE_GTKMM)
   add_executable(disk-manager-gui
     src/gui/main.cpp
     src/gui/gui_app.cpp
+    src/gui/gui_disks.cpp
+    src/gui/gui_arrays.cpp
+    src/gui/gui_firmware.cpp
+    src/gui/gui_recovery.cpp
   )
   target_include_directories(disk-manager-gui PRIVATE ${GTKMM_INCLUDE_DIRS})
   target_link_directories(disk-manager-gui PRIVATE ${GTKMM_LIBRARY_DIRS})
